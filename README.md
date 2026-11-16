@@ -6,4 +6,12 @@ Versi terbaru dari website Transaksi Potion
 
 # Apa yang baru?
 
-## jd
+##
+
+## Search
+
+Di aplikasi sebelumnya, fitur ini belum ada (namun saya sudah menambahkannya sekarang)
+
+## Tambah Gold
+
+Di aplikasi sebelumnya, fitur ini belum ada (namun saya sudah menambahkannya sekarang)
