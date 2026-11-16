@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaksi 2.0</title>
+    <link rel="stylesheet" href="potion2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/2ae64ba97ed9bcd584dd5989332fe300?family=CCBackBeat+W00+Light"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="saldo">
+        Saldo: <span></span>
+        <button class="tambahSaldo">+</button>
+      </h1>
+      <div class="search">
+        <input type="search" placeholder="Search Potion ..." />
+        <svg
+          class="searchIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+        >
+          <g>
+            <path
+              class="Union"
+              fill="#000000"
+              d="M11 2c4.9706 0 9 4.02944 9 9 0 2.125 -0.7381 4.0766 -1.9697 5.6162l4.1767 4.1768 -1.414 1.414 -4.1768 -4.1767C15.0766 19.2619 13.125 20 11 20c-4.97056 0 -9 -4.0294 -9 -9 0 -4.97056 4.02944 -9 9 -9m0 2c-3.86599 0 -7 3.13401 -7 7 0 3.866 3.13401 7 7 7 3.866 0 7 -3.134 7 -7 0 -3.86599 -3.134 -7 -7 -7"
+              stroke-width="1"
+            ></path>
+          </g>
+        </svg>
+      </div>
+    </header>
+
+    <section id="navbar">
+      <div class="susunanButton">
+        <div class="user">
+          <svg
+            class="iconHamburger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+          <div class="gambarUser">
+            <img src="fotoprofil.jpg" alt="" />
+          </div>
+          <h1>Petualang</h1>
+        </div>
+        <button class="home">
+          <svg
+            class="iconHome"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-home"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <h2>Home</h2>
+        </button>
+        <button class="beli">
+          <svg
+            class="iconBeli"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-plus-circle"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="16" />
+            <line x1="8" y1="12" x2="16" y2="12" />
+          </svg>
+          <h2>Beli</h2>
+        </button>
+        <button class="histori">
+          <svg
+            class="iconHistori"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-inbox"
+          >
+            <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
+            <path
+              d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+            />
+          </svg>
+          <h2>Histori</h2>
+        </button>
+        <button class="gantiAkun">
+          <svg
+            class="iconGantiAkun"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-user"
+          >
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <h2>Ganti Akun</h2>
+        </button>
+      </div>
+    </section>
+
+    <section id="home">
+      <div class="logoInventory">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-book-open"
+        >
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+        <h1>Inventory</h1>
+      </div>
+      <label for="filterPotion" class="filterPotion">
+        <span>Filter Potion:</span>
+        <select id="filterPotion" name="sortPotion">
+          <option value="default">Default</option>
+          <optgroup label="Harga">
+            <option value="termurah">Termurah</option>
+            <option value="termahal">Termahal</option>
+          </optgroup>
+          <optgroup label="Stok">
+            <option value="terbanyak">Terbanyak</option>
+            <option value="tersedikit">Tersedikit</option>
+          </optgroup>
+          <optgroup label="Jenis">
+            <option value="buff">Buff</option>
+            <option value="damage">Damage</option>
+            <option value="crowdControl">Control</option>
+          </optgroup>
+          <optgroup label="Tipe">
+            <option value="darkElixir">Dark Elixir Spell</option>
+            <option value="elixir">Elixir Spell</option>
+          </optgroup>
+        </select>
+      </label>
+      <div class="inventory"></div>
+    </section>
+
+    <section id="beli">
+      <div class="logoInventory">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-book-open"
+        >
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+        <h1>Pembelian Potion</h1>
+      </div>
+      <label for="filterPotion" class="filterPotion">
+        <span>Filter Potion:</span>
+        <select id="filterPotion" name="sortPotion">
+          <option value="default">Default</option>
+          <optgroup label="Harga">
+            <option value="termurah">Termurah</option>
+            <option value="termahal">Termahal</option>
+          </optgroup>
+          <optgroup label="Stok">
+            <option value="terbanyak">Terbanyak</option>
+            <option value="tersedikit">Tersedikit</option>
+          </optgroup>
+          <optgroup label="Jenis">
+            <option value="buff">Buff</option>
+            <option value="damage">Damage</option>
+            <option value="crowdControl">Control</option>
+          </optgroup>
+          <optgroup label="Tipe">
+            <option value="darkElixir">Dark Elixir Spell</option>
+            <option value="elixir">Elixir Spell</option>
+          </optgroup>
+        </select>
+      </label>
+
+      <button class="shoppingcard">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-shopping-cart"
+        >
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path
+            d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+          />
+        </svg>
+        <span>3</span>
+      </button>
+      <div class="inventory"></div>
+    </section>
+
+    <section id="daftarPembelian">
+      <div class="dataPembelian">
+        <h1>Detail Belanja</h1>
+        <div class="detailPembelian">
+          <div class="item">
+            <div class="wadahGambar">
+              <img src="fotoprofil.jpg" alt="" />
+            </div>
+            <h4 class="namaPotion">Overgrowth Spell</h4>
+            <p class="hargaPotion">
+              130 x <button class="buang">-</button
+              ><span class="jumlahPotion">4</span
+              ><button class="tambah">+</button> =
+              <span class="totalPotion">647</span>
+            </p>
+            <button class="delete">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-trash-2"
+              >
+                <polyline points="3 6 5 6 21 6" />
+                <path
+                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                />
+                <line x1="10" y1="11" x2="10" y2="17" />
+                <line x1="14" y1="11" x2="14" y2="17" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="detailTotal">
+          <h2>Total Barang: <span class="totalPotion"></span></h2>
+          <h2>Total Harga: <span class="totalHargaPotion"></span></h2>
+        </div>
+        <div class="buttonKonfirmasi">
+          <button class="konfirmasi">Checkout</button>
+          <button class="batal">Batal</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="history"></section>
+    <section id="popup">
+      <div class="tampilanPotion">
+        <h1 class="judulPotion">Haste Spell</h1>
+        <button class="tutupTampilanPotion">X</button>
+        <button class="iconDeskripsiInfoPotion">i</button>
+        <div class="gambarPotion">
+          <img
+            src="..\latihan9_cardbolakbalik\spell\Haste_Spell_info.jpg"
+            alt=""
+          />
+        </div>
+        <div class="infoPotion">
+          <div class="cardInfo">
+            <div class="cardTampilanInfo stokPotion">
+              <h2>Stok:</h2>
+              <span>99</span>
+            </div>
+            <div class="cardTampilanInfo hargaPotion">
+              <h2>Harga:</h2>
+              <span>5000</span>
+            </div>
+            <div class="cardTampilanInfo jenisPotion">
+              <h2>Jenis Spell:</h2>
+              <span>Dark Spell</span>
+            </div>
+            <div class="cardTampilanInfo tipePotion">
+              <h2>Tipe Spell:</h2>
+              <span>Buff</span>
+            </div>
+          </div>
+          <div class="deskripsiInfoPotion">
+            <h1>Deskripsi:</h1>
+            <span class="deskripsiPotion"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus, aut quae quia, ratione labore delectus quibusdam,
+              quas odio aliquid nemo quo cum pariatur beatae. Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Id aperiam tempora
+              rem!</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="potion2.js"></script>
+  </body>
+</html>
